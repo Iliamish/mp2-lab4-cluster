@@ -1,0 +1,17 @@
+﻿  Client.cpp
+f:\nngutasks\mp2-lab4-cluster\cluster\cluster\cluster.h(11): warning C4091: typedef : пропускается слева от "Processor", когда ни одна переменная не объявлена
+f:\nngutasks\mp2-lab4-cluster\cluster\cluster\cluster.h(16): warning C4091: typedef : пропускается слева от "taskInWork", когда ни одна переменная не объявлена
+f:\nngutasks\mp2-lab4-cluster\cluster\cluster\client.cpp(11): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Cluster.cpp
+f:\nngutasks\mp2-lab4-cluster\cluster\cluster\cluster.h(11): warning C4091: typedef : пропускается слева от "Processor", когда ни одна переменная не объявлена
+f:\nngutasks\mp2-lab4-cluster\cluster\cluster\cluster.h(16): warning C4091: typedef : пропускается слева от "taskInWork", когда ни одна переменная не объявлена
+f:\nngutasks\mp2-lab4-cluster\cluster\cluster\cluster.cpp(40): warning C4018: <: несоответствие типов со знаком и без знака
+f:\nngutasks\mp2-lab4-cluster\cluster\cluster\cluster.cpp(42): warning C4018: >=: несоответствие типов со знаком и без знака
+f:\nngutasks\mp2-lab4-cluster\cluster\cluster\cluster.cpp(62): warning C4018: <: несоответствие типов со знаком и без знака
+f:\nngutasks\mp2-lab4-cluster\cluster\cluster\cluster.cpp(73): warning C4018: <: несоответствие типов со знаком и без знака
+  sample_cluster.cpp
+f:\nngutasks\mp2-lab4-cluster\cluster\cluster\cluster.h(11): warning C4091: typedef : пропускается слева от "Processor", когда ни одна переменная не объявлена
+f:\nngutasks\mp2-lab4-cluster\cluster\cluster\cluster.h(16): warning C4091: typedef : пропускается слева от "taskInWork", когда ни одна переменная не объявлена
+f:\nngutasks\mp2-lab4-cluster\cluster\cluster\sample_cluster.cpp(5): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  Создание кода...
+  Cluster.vcxproj -> F:\NnguTasks\mp2-lab4-cluster\Cluster\Debug\Cluster.exe
