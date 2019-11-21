@@ -24,7 +24,7 @@ struct Task
 template <class T>
 class TQueue
 {
-	List<Task> * pFirst;
+	List<T> * pFirst;
 	int _size = 0;
 
 public:
@@ -56,36 +56,16 @@ public:
 			return;
 		}
 		List<T> *tmp = pFirst;
-		bool ins = false;
 		List<T> *obj = new List<T>;
 		obj->data = object;
 		while (tmp->next != nullptr ) {
-			if (tmp->next->data.priority < object.priority) {
-				ins = true;
-				if(tmp != pFirst)
-					insert(tmp, tmp->next, obj);
-				else {
-					obj->next = pFirst;
-					pFirst = obj;
-				}
-				break;
-			}
 			tmp = tmp->next;
 		}
-		if (!ins) {
-			if (pFirst->data.priority < object.priority) {
-				obj->next = pFirst;
-				pFirst = obj;
-			}
-			else {
-				tmp->next = obj;
-				obj->next = nullptr;
-			}
-		}
-
-
-
+		tmp->next = obj;
+		obj->next = nullptr;
 	}
+
+	
 
 	void insert(List<T> *prevElement, List<T> *afterElement, List<T> *obj) {
 		obj->next = afterElement;
@@ -93,6 +73,8 @@ public:
 	}
 
 	void pop() {
+		if (pFirst == nullptr)
+			throw 0;
 		_size--;
 		List<T> *tmp = pFirst;
 		pFirst = tmp->next;
@@ -105,14 +87,57 @@ public:
 
 	void incPriority() {
 		List<T> *tmp = pFirst;
-		if(pFirst != nullptr)
-			while(tmp->next != nullptr) {
+		if (pFirst != nullptr) {
+			do  {
 				tmp->data.priority++;
 				tmp = tmp->next;
-			}
+			} while (tmp != nullptr);
+		}
 	}
 
 	int size() {
 		return _size;
 	}
 };
+
+template <>
+void TQueue<Task>::push(Task object) {
+	_size++;
+	if (pFirst == nullptr) {
+		List<Task> *obj = new List<Task>;
+		obj->data = object;
+		obj->next = nullptr;
+		pFirst = obj;
+		return;
+	}
+	List<Task> *tmp = pFirst;
+	bool ins = false;
+	List<Task> *obj = new List<Task>;
+	obj->data = object;
+	while (tmp->next != nullptr) {
+		if (tmp->next->data.priority < object.priority) {
+			ins = true;
+			if (tmp != pFirst)
+				insert(tmp, tmp->next, obj);
+			else {
+				obj->next = pFirst;
+				pFirst = obj;
+			}
+			break;
+		}
+		tmp = tmp->next;
+	}
+	if (!ins) {
+		if (pFirst->data.priority < object.priority) {
+			obj->next = pFirst;
+			pFirst = obj;
+		}
+		else {
+			tmp->next = obj;
+			obj->next = nullptr;
+		}
+	}
+
+
+
+}

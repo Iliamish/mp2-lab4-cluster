@@ -20,15 +20,15 @@ typedef struct taskInWork {
 class Cluster
 {
 	TQueue<Task> queue;
-	vector<Processor> cluster;
 	vector<taskInWork> workProcess;
 	int cores;
 	int workingCores;
-
 	int doneTasks = 0;
 	int invalidTasks = 0;
 	
 public:
+	vector<Processor> cluster;
+
 	Cluster();
 	~Cluster();
 	void setNewTasks(vector<Task> &tasks);

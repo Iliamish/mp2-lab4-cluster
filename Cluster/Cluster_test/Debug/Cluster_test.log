@@ -1,1 +1,4 @@
-﻿
+﻿  test_tqueue.cpp
+  tast_main.cpp
+f:\nngutasks\mp2-lab4-cluster\cluster\cluster_test\tast_main.cpp(1): fatal error C1083: Не удается открыть файл включение: gtest.h: No such file or directory,
+  Создание кода...

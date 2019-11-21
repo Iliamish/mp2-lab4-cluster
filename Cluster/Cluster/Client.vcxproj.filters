@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\NnguTasks\mp2-lab4-cluster\Cluster\Cluster\Client.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\NnguTasks\mp2-lab4-cluster\Cluster\Cluster\Cluster.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\NnguTasks\mp2-lab4-cluster\Cluster\Cluster\sample_cluster.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="F:\NnguTasks\mp2-lab4-cluster\Cluster\Cluster\Client.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\NnguTasks\mp2-lab4-cluster\Cluster\Cluster\Cluster.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\NnguTasks\mp2-lab4-cluster\Cluster\Cluster\TQueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\NnguTasks\mp2-lab4-cluster\Cluster\Cluster\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{414C32EE-8658-3E63-87A6-1D5B5BDA0FFC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F35A2156-4AD4-3F43-A8AD-F91FD46E9549}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

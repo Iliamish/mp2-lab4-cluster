@@ -33,6 +33,8 @@ void Cluster::setNewTasks(vector<Task> &tasks)
 
 bool Cluster::validTask(Task &task)
 {
+	if (MaxProcessors < task.processors)
+		return false;
 	auto processorArray = cluster;
 	std::sort(task.cores.begin(), task.cores.end());
 	for (auto neededCores : task.cores) {
