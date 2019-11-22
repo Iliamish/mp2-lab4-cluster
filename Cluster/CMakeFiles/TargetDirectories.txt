@@ -1,5 +1,0 @@
-F:/NnguTasks/mp2-lab4-cluster/Cluster/CMakeFiles/ALL_BUILD.dir
-F:/NnguTasks/mp2-lab4-cluster/Cluster/CMakeFiles/ZERO_CHECK.dir
-F:/NnguTasks/mp2-lab4-cluster/Cluster/Cluster/CMakeFiles/Client.dir
-F:/NnguTasks/mp2-lab4-cluster/Cluster/Cluster_test/CMakeFiles/Cluster_test.dir
-F:/NnguTasks/mp2-lab4-cluster/Cluster/gtest/CMakeFiles/gtest.dir
